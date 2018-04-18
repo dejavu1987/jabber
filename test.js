@@ -5,4 +5,4 @@ const themeWords = ["Content curation", "Engagement", "Embedding", "Impressions"
 
 let jabber = new Jabber(themeWords, 2);
 
-console.log(jabber.createParagraph(6666));
+console.log(jabber.createParagraph(50));
