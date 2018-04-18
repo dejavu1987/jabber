@@ -1,0 +1,19 @@
+{
+  "name": "jabber",
+  "version": "1.0.0",
+  "description": "Simple random word, paragraph, lorem ipsum, dummy text generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lorem",
+    "ipsum",
+    "lipsum",
+    "dummy",
+    "content",
+    "seed"
+  ],
+  "author": "anil@anilmaharjan.com.np",
+  "license": "ISC"
+}
