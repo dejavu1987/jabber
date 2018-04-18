@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dejavu1987/jabber.git"
+  },
   "keywords": [
     "lorem",
     "ipsum",
