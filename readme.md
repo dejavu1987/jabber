@@ -1,4 +1,4 @@
-# Jabber
+# Jabber [![Build Status](https://travis-ci.org/dejavu1987/jabber.svg?branch=master)](https://travis-ci.org/dejavu1987/jabber)
 
 Simple random word / paragraph / lorem ipsum / dummy text generator. 
 
