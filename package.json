@@ -21,6 +21,6 @@
   "author": "anil@anilmaharjan.com.np",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^26.6.1"
   }
 }
