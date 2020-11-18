@@ -17,7 +17,7 @@ npm install jabber
 
 ## Usage Example
 
-```JavaScript
+```js
 const Jabber = require('jabber');
 
 
@@ -44,7 +44,7 @@ jabber.createParagraph(30);
 
 ## Usage with theme words
 
-```JavaScript
+```js
 // Define Theme Words that will appear randomly in the text
 
 const themeWords = ["Content curation", "Engagement", "Embedding", "Impressions", "Influencer", "Mentions", "Microblogging", "Organic", "Reach", "Social graph", "User-generated content (UGC)", "Affiliate marketing", "Bounce rate", "Call to Action (CTA)", "Click through rate (CTR)", "SDK (Software Development Kit)", "Web apps"];
