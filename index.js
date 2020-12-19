@@ -15,14 +15,16 @@ const vowels = 'aeiou';
 class Jabber {
   /**
    *
-   * @param themeWords Custom words that need to appear in some density
-   * @param themeWordDensity appearance of themeword 1 per this number so 5 will make it approx 1 per 5 words
+   * @param themeWords {array} Custom words that need to appear in some density
+   * @param themeWordDensity {number} appearance of themeword 1 per this number so 5 will make it approx 1 per 5 words
+   * @param extraVowels {string} additional vowel chars
+   * @param extraConsonants {string} additional consonants
    */
   constructor(
     themeWords = [],
     themeWordDensity = 3,
-    extraVowels,
-    extraConsonants
+    extraVowels = '',
+    extraConsonants = ''
   ) {
     this.themeWords = themeWords;
     this.themeWordDensity = themeWordDensity;

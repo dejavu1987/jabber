@@ -2,12 +2,16 @@
 
 Simple random word / paragraph / lorem ipsum / dummy text generator.
 
+Supports fake name, email address.
+
 ## Features
 
 - Capitalizes first letter of the sentences.
 - Add theme words to make the sentences look somewhat related to a theme and not complete jabber.
 - No dependencies, light weight
 - Configurable density of theme words.
+- Generate fake names and emails
+- Add additional vowel/consonant characters to pre configured english alphabets.
 
 ## Installation
 
@@ -20,6 +24,27 @@ npm install jabber
 ```js
 const Jabber = require('jabber');
 
+```
+
+## Instantiate Jabber
+```ts
+new Jabber( themeWords: string[],
+            themeWordDensity: number, 
+            extraVowels: string, 
+            extraConsonants: string ) : Jabber
+
+// @param themeWords — Custom words that need to appear in some density
+
+// @param themeWordDensity — appearance of themeword 1 per this number so 5 will make it approx 1 per 5 words
+
+// @param extraVowels — additional vowel chars
+
+// @param extraConsonants — additional consonants
+```
+
+## Without theme words
+
+```js
 
 // Initialize without theme words, all the words generated will be jabber-ish
 
@@ -35,6 +60,13 @@ jabber.createWord(6); //"cubaci"
 
 jabber.createWord(5, true); //"Ribah"
 
+jabber.createFullName();  // 'Ms. Negu Komi',
+
+const nameNoSalutation = jabber.createFullName(false); //' Mobosek Teqigeg'
+
+jabber.createEmail(); // 'loddla.noyec@domain.com'
+
+const emailWithCustomDomain = jabber.createEmail('jabber.com'); // 'ticu.lebec@jabber.com'
 
 // create a paragraph of 30 words
 
@@ -62,8 +94,7 @@ let jabber = new Jabber(themeWords, 2);
 // Create a 6 letter word (Capitalized)
 // createWord might return themeword which will not care about length
 
-jabber.createWord(6, true); //"Pamulo"
-
+jabber.createWord(6, true); // "Pamulo"
 
 // create a paragraph of 50 words
 
@@ -74,7 +105,3 @@ jabber.createParagraph(50);
 ## Result
 
 Limebojetu Pixels per Inch (PPI) cico Selector. Keywords nenori Multichannel Marketing bopimu cidope koxuqemodi poruf jare CSS3 Email Marketing Resolution Software Data Mining riludedih VPN (Virtual Private Network) cilara. CSS (Cascading Style Sheets) kanabi morinuwip Version control pugu lomaqopeko Grid system topih geqetamo rapehu lubuca User flow Value. Lub Mentions kimadiqubu kefic. Yibon dedu. Li. Reach Property tijacodur. Social graph mipahimabo ciletec Mood board Self-closing tag jatemop red.
-
-```
-
-```
