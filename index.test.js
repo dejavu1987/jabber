@@ -106,6 +106,10 @@ describe('When Jabber initialized with a theme', () => {
   let jabber = new Jabber(themeWords, 2);
   const word = jabber.createWord(5);
   const para = jabber.createParagraph(5);
+  const name = jabber.createFullName();
+  const nameNoSalutation = jabber.createFullName(false);
+  const email = jabber.createEmail();
+  const emailCust = jabber.createEmail('jabber.com');
 
   test('Created word should be defined', () => {
     expect(word).toBeDefined();
@@ -121,6 +125,44 @@ describe('When Jabber initialized with a theme', () => {
 
   test('Paragraph should start with Uppercase and end with a "."', () => {
     expect(para).toMatch(/^[A-Z].+\.$/g);
+  });
+
+  test('Created name with salutation should be defined', () => {
+    expect(name).toBeDefined();
+  });
+
+  test('Created name should match a pattern with salutation', () => {
+    expect(name).toMatch(/^M[sr]\.( [A-ZÄÖÜ][a-zäöüß]+){2}$/);
+  });
+
+  test('Created name should be defined', () => {
+    expect(nameNoSalutation).toBeDefined();
+  });
+
+  test('Created name should match a pattern w-o salutation', () => {
+    expect(nameNoSalutation).toMatch(/^[A-ZÄÖÜ][a-zäöüß]+ [A-ZÄÖÜ][a-zäöüß]+$/);
+  });
+
+  test('Created email should be defined', () => {
+    expect(email).toBeDefined();
+  });
+
+  test('Created email should match a pattern', () => {
+    
+    expect(email).toMatch(
+      /^[a-zäöüß]+\.[a-zäöüß]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$/
+    );
+  });
+
+  test('Created email w/ custom domain should be defined', () => {
+    expect(emailCust).toBeDefined();
+  });
+
+  test('Created emailCust should match a pattern', () => {
+
+    expect(emailCust).toMatch(
+      /^[a-zäöüß]+\.[a-zäöüß]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}$/
+    );
   });
 });
 
