@@ -1,10 +1,11 @@
 {
   "name": "jabber",
   "version": "1.2.0",
-  "description": "Simple random word, paragraph, lorem ipsum, dummy text generator.",
+  "description": "Simple random word, paragraph, lorem ipsum, dummy text generator, fake name, email.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "bin": {
     "jabber": "./bin/index.js"
@@ -22,7 +23,7 @@
     "seed"
   ],
   "author": "anil@anilmaharjan.com.np",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^26.6.1"
   }
