@@ -1,6 +1,6 @@
 {
   "name": "jabber",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Simple random word, paragraph, lorem ipsum, dummy text generator, fake name, email.",
   "main": "index.js",
   "scripts": {
