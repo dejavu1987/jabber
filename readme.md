@@ -1,4 +1,4 @@
-# Jabber [![Build Status](https://travis-ci.org/dejavu1987/jabber.svg?branch=master)](https://travis-ci.org/dejavu1987/jabber) [![npm version](https://badge.fury.io/js/jabber.svg)](https://badge.fury.io/js/jabber)
+# Jabber [![Build Status](https://travis-ci.org/dejavu1987/jabber.svg?branch=master)](https://travis-ci.org/dejavu1987/jabber) [![npm version](https://badge.fury.io/js/jabber.svg)](https://badge.fury.io/js/jabber) [![Coverage Status](https://coveralls.io/repos/github/dejavu1987/jabber/badge.svg?branch=master)](https://coveralls.io/github/dejavu1987/jabber?branch=master)
 
 Simple random word / paragraph / lorem ipsum / dummy text generator.
 
