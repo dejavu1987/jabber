@@ -120,3 +120,8 @@ jabber.createParagraph(50);
 ## Result
 
 Limebojetu Pixels per Inch (PPI) cico Selector. Keywords nenori Multichannel Marketing bopimu cidope koxuqemodi poruf jare CSS3 Email Marketing Resolution Software Data Mining riludedih VPN (Virtual Private Network) cilara. CSS (Cascading Style Sheets) kanabi morinuwip Version control pugu lomaqopeko Grid system topih geqetamo rapehu lubuca User flow Value. Lub Mentions kimadiqubu kefic. Yibon dedu. Li. Reach Property tijacodur. Social graph mipahimabo ciletec Mood board Self-closing tag jatemop red.
+
+## Performance
+
+Since Jabber is extreamly light weight, it is very performant.
+![image](https://user-images.githubusercontent.com/1720245/103021497-8408d580-454a-11eb-9bdb-639c001ac5fc.png)
