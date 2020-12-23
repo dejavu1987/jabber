@@ -20,7 +20,10 @@
     "lipsum",
     "dummy",
     "content",
-    "seed"
+    "seed",
+    "fake",
+    "faker",
+    "generator"
   ],
   "author": "anil@anilmaharjan.com.np",
   "license": "MIT",
