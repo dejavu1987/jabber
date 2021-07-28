@@ -15,6 +15,17 @@ Supports fake name, email address.
 - Generate fake names and emails
 - Add additional vowel/consonant characters to pre configured english alphabets.
 
+## Using without installing (NPX)
+Generate a word of 9 letters.
+
+```npm
+npx jabber -w 9
+```
+
+Generate a paragraph of 25 words.
+```npm
+npx jabber -p 25
+```
 ## Installation
 
 ```npm
