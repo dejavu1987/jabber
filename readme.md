@@ -72,7 +72,7 @@ jabber.createWord(5, true); //"Ribah"
 
 jabber.createFullName(); // 'Ms. Negu Komi',
 
-const nameNoSalutation = jabber.createFullName(false); //' Mobosek Teqigeg'
+const nameNoSalutation = jabber.createFullName(false); // 'Mobosek Teqigeg'
 
 jabber.createEmail(); // 'loddla.noyec@domain.com'
 
