@@ -1,5 +1,4 @@
-# Jabber [![Build Status](https://travis-ci.org/dejavu1987/jabber.svg?branch=master)](https://travis-ci.org/dejavu1987/jabber) [![npm version](https://badge.fury.io/js/jabber.svg)](https://badge.fury.io/js/jabber) [![Coverage Status](https://coveralls.io/repos/github/dejavu1987/jabber/badge.svg?branch=master)](https://coveralls.io/github/dejavu1987/jabber?branch=master) [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md) [![RussianWarship](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/RussianWarship.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md) [![Rate this package](https://badges.openbase.com/js/rating/jabber.svg?token=HSXh8YOddwfjQ//Giqc0V+6eFJa979CgrfG1NqeKEZ4=)](https://openbase.com/js/jabber?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
-
+# Jabber [![Build Status](https://travis-ci.org/dejavu1987/jabber.svg?branch=master)](https://travis-ci.org/dejavu1987/jabber) [![npm version](https://badge.fury.io/js/jabber.svg)](https://badge.fury.io/js/jabber) [![Coverage Status](https://coveralls.io/repos/github/dejavu1987/jabber/badge.svg?branch=master)](https://coveralls.io/github/dejavu1987/jabber?branch=master) [![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md) [![RussianWarship](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/RussianWarship.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md) [![Rate this package](https://badges.openbase.com/js/rating/jabber.svg?token=HSXh8YOddwfjQ//Giqc0V+6eFJa979CgrfG1NqeKEZ4=)](https://openbase.com/js/jabber?utm_source=embedded&utm_medium=badge&utm_campaign=rate-badge)
 
 [![SWUbanner](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
 
@@ -19,6 +18,7 @@ Supports fake name, email address.
 - Add additional vowel/consonant characters to pre configured english alphabets.
 
 ## Using without installing (NPX)
+
 Generate a word of 9 letters.
 
 ```npm
@@ -26,9 +26,11 @@ npx jabber -w 9
 ```
 
 Generate a paragraph of 25 words.
+
 ```npm
 npx jabber -p 25
 ```
+
 ## Installation
 
 ```npm
@@ -38,7 +40,7 @@ npm install jabber
 ## Usage Example
 
 ```js
-const Jabber = require('jabber');
+const Jabber = require("jabber");
 ```
 
 ## Instantiate Jabber
@@ -79,7 +81,7 @@ const nameNoSalutation = jabber.createFullName(false); // 'Mobosek Teqigeg'
 
 jabber.createEmail(); // 'loddla.noyec@domain.com'
 
-const emailWithCustomDomain = jabber.createEmail('jabber.com'); // 'ticu.lebec@jabber.com'
+const emailWithCustomDomain = jabber.createEmail("jabber.com"); // 'ticu.lebec@jabber.com'
 
 // create a paragraph of 30 words
 
@@ -93,23 +95,23 @@ jabber.createParagraph(30);
 // Define Theme Words that will appear randomly in the text
 
 const themeWords = [
-  'Content curation',
-  'Engagement',
-  'Embedding',
-  'Impressions',
-  'Influencer',
-  'Mentions',
-  'Microblogging',
-  'Organic',
-  'Reach',
-  'Social graph',
-  'User-generated content (UGC)',
-  'Affiliate marketing',
-  'Bounce rate',
-  'Call to Action (CTA)',
-  'Click through rate (CTR)',
-  'SDK (Software Development Kit)',
-  'Web apps',
+  "Content curation",
+  "Engagement",
+  "Embedding",
+  "Impressions",
+  "Influencer",
+  "Mentions",
+  "Microblogging",
+  "Organic",
+  "Reach",
+  "Social graph",
+  "User-generated content (UGC)",
+  "Affiliate marketing",
+  "Bounce rate",
+  "Call to Action (CTA)",
+  "Click through rate (CTR)",
+  "SDK (Software Development Kit)",
+  "Web apps",
 ];
 
 /*
@@ -139,3 +141,7 @@ Limebojetu Pixels per Inch (PPI) cico Selector. Keywords nenori Multichannel Mar
 
 Since Jabber is extreamly light weight, it is very performant.
 ![image](https://user-images.githubusercontent.com/1720245/103021497-8408d580-454a-11eb-9bdb-639c001ac5fc.png)
+
+## Changelog
+
+v.1.5.1 TypeScript support - [DEMO](https://stackblitz.com/edit/jabber-typescript?file=index.ts)
