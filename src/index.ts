@@ -135,4 +135,4 @@ class Jabber {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
 }
-export { Jabber };
+export default Jabber;

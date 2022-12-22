@@ -1,4 +1,4 @@
-import { Jabber } from "./index";
+import Jabber from "./index";
 
 describe("When Jabber initialized with a theme", () => {
   const themeWords = [

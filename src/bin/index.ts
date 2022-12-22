@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { Jabber } from "..";
+import Jabber from "..";
 const [, , ...args] = process.argv;
 const jabber = new Jabber();
 
