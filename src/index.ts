@@ -5,8 +5,8 @@
  *
  */
 
-const consonants = 'bcdfghjklmnpqrstvwxyzbpcrtpcrddrtplmnplmnbbcbcdrbnmklhgd';
-const vowels = 'aeiou';
+const consonants = "bcdfghjklmnpqrstvwxyzbpcrtpcrddrtplmnplmnbbcbcdrbnmklhgd";
+const vowels = "aeiou";
 
 /**
  * Jabber Class
@@ -20,11 +20,15 @@ class Jabber {
    * @param extraVowels {string} additional vowel chars
    * @param extraConsonants {string} additional consonants
    */
+  themeWords: string[];
+  themeWordDensity: number;
+  vowels: string;
+  consonants: string;
   constructor(
-    themeWords = [],
+    themeWords: string[] = [],
     themeWordDensity = 3,
-    extraVowels = '',
-    extraConsonants = ''
+    extraVowels = "",
+    extraConsonants = ""
   ) {
     this.themeWords = themeWords;
     this.themeWordDensity = themeWordDensity;
@@ -38,31 +42,30 @@ class Jabber {
    * @param avoidThemeWords {boolean}
    * @returns {string}
    */
-  createWord(length, capitalize, avoidThemeWords = false) {
-    let word = '';
+  createWord(length: number, capitalize = false, avoidThemeWords = false) {
+    let word = "";
     if (
       !avoidThemeWords &&
       this.themeWords.length &&
       Math.floor(Math.random() * this.themeWordDensity) < 1
     ) {
-      word = this.themeWords[
-        Math.floor(Math.random() * this.themeWords.length)
-      ];
+      word =
+        this.themeWords[Math.floor(Math.random() * this.themeWords.length)];
     } else {
-      let currently = 'consonants';
+      let currently = "consonants";
       for (let i = 0; i < length; i++) {
-        if (currently === 'consonants') {
+        if (currently === "consonants") {
           word += this.consonants.substr(
             Math.floor(Math.random() * this.consonants.length),
             1
           );
-          currently = 'vowels';
+          currently = "vowels";
         } else {
           word += this.vowels.substr(
             Math.floor(Math.random() * this.vowels.length),
             1
           );
-          currently = 'consonants';
+          currently = "consonants";
         }
       }
     }
@@ -78,8 +81,8 @@ class Jabber {
    * @param length
    * @returns {string}
    */
-  createParagraph(length) {
-    let paragraph = '';
+  createParagraph(length: number) {
+    let paragraph = "";
     let capitalizeNextWord = true;
     for (let i = 0; i < length; i++) {
       paragraph += this.createWord(
@@ -87,14 +90,14 @@ class Jabber {
         capitalizeNextWord
       );
       if (Math.floor(Math.random() * 9) < 1) {
-        paragraph += '. ';
+        paragraph += ". ";
         capitalizeNextWord = true;
       } else {
-        paragraph += ' ';
+        paragraph += " ";
         capitalizeNextWord = false;
       }
     }
-    return paragraph.trim() + '.';
+    return paragraph.trim() + ".";
   }
 
   /**
@@ -104,9 +107,9 @@ class Jabber {
    */
   createFullName(salutation = true) {
     return (
-      (salutation ? (Math.random() > 0.5 ? 'Mr. ' : 'Ms. ') : '') +
+      (salutation ? (Math.random() > 0.5 ? "Mr. " : "Ms. ") : "") +
       this.createWord(3 + Math.floor(Math.random() * 5), true, true) +
-      ' ' +
+      " " +
       this.createWord(2 + Math.floor(Math.random() * 9), true, true)
     );
   }
@@ -116,18 +119,20 @@ class Jabber {
    * @param customDomain {string}
    * @returns {string}
    */
-  createEmail(customDomain) {
-    return this.createWord(3 + Math.floor(Math.random() * 5), false, true) +
-      '.' +
+  createEmail(customDomain?: string) {
+    const domain =
+      typeof customDomain === "undefined" ? "domain.com" : customDomain;
+    return (
+      this.createWord(3 + Math.floor(Math.random() * 5), false, true) +
+      "." +
       this.createWord(2 + Math.floor(Math.random() * 9), false, true) +
-      '@' +
-      (customDomain
-      ? customDomain
-      : 'domain.com');
+      "@" +
+      domain
+    );
   }
 
-  _jsUcfirst(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
+  _jsUcfirst(str: string) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
   }
 }
-module.exports = Jabber;
+export { Jabber };

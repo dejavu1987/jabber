@@ -2,13 +2,14 @@
   "name": "jabber",
   "version": "1.4.0",
   "description": "Simple random word, paragraph, lorem ipsum, dummy text generator, fake name, email.",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "test-coverage": "jest --coverage"
+    "test-coverage": "jest --coverage",
+    "build": "tsc"
   },
   "bin": {
-    "jabber": "./bin/index.js"
+    "jabber": "./build/bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,11 @@
   "author": "anil@anilmaharjan.com.np",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^29.2.4",
     "coveralls": "^3.1.1",
-    "jest": "^26.6.3"
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "tsc": "^2.0.4",
+    "typescript": "^4.9.4"
   }
 }

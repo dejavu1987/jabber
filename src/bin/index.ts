@@ -1,22 +1,22 @@
 #!/usr/bin/env node
 
+import { Jabber } from "..";
 const [, , ...args] = process.argv;
-const Jabber = require('../index');
-jabber = new Jabber();
+const jabber = new Jabber();
 
 switch (args[0]) {
-  case '-w':
+  case "-w":
     // console.log('Word of length', args[1]);
-    console.log(jabber.createWord(args[1]));
+    console.log(jabber.createWord(parseInt(args[1])));
     break;
-  case '-p':
+  case "-p":
     // console.log('Paragraph of length', args[1]);
-    console.log(jabber.createParagraph(args[1]));
+    console.log(jabber.createParagraph(parseInt(args[1])));
     break;
-  case '-h':
+  case "-h":
   default:
     hr();
-    console.log('[?] Jabber Help!');
+    console.log("[?] Jabber Help!");
     hr();
     console.log(`
     Commands
